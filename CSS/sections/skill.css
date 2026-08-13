@@ -26,7 +26,7 @@
 
     & p {
         margin-top: 12px;
-        color: var(--n--500);
+        color: var(--n-500);
         max-width: 60ch;
     }
 }
@@ -84,6 +84,12 @@
             font-weight: 700;
             font-size: var(--caption-font-size);
             text-transform: uppercase;
+
+            & img {
+                width: 24px;
+                height: 24px;
+                object-fit: contain;
+            }
         }
 
        & .icon-badges:nth-child(even) {
@@ -95,9 +101,10 @@
             border: 1px solid var(--p-100);
 
             & span {
-                background-color: var(--main-gradient-color);
+                background: var(--main-gradient-color);
                 color: transparent;
-                background-clip: text ;
+                -webkit-background-clip: text;
+                background-clip: text;
             }
         }
     }
@@ -132,8 +139,9 @@
                 position: absolute;
 
                 & p {
-                    background-color: wheat;
-                    color: blue;
+                    background: var(--main-gradient-color);
+                    color: transparent;
+                    -webkit-background-clip: text;
                     background-clip: text;
                 }
 
